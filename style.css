@@ -1,0 +1,568 @@
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background-color: #1F1D2B;
+}
+
+header {
+    padding: 20px;
+    background-color: #1F1D2B;
+    border-bottom: 1px solid #ddd;
+    display: flex; /* Делаем header flex-контейнером */
+    align-items: center; /* Выравниваем элементы по вертикали */
+    justify-content: space-between; /* Распределяем пространство между элементами */
+}
+
+/* Логотип */
+.logo-container {
+    margin-right: auto; /* Логотип прижат к левому краю */
+}
+
+
+/* (FLEX) - space between; justify-content */
+
+.logo {
+    font-size: 2rem;
+    font-weight: 700;
+    background: linear-gradient(90deg, #9B51E0, #3081ED);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    color: transparent;
+    margin-left: 20px;
+}
+
+/* Центральная навигационная панель */
+.navbar {
+    margin-right: 600px; /* Центрируем навигацию */
+}
+
+.navbar ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    gap: 20px; /* Расстояние между пунктами меню */
+}
+
+.navbar>ul>li {
+    color: #fff;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.navbar a:hover {
+    color: #9B51E0;
+}
+
+/* Кнопки справа */
+.auth-buttons {
+    display: flex;
+    gap: 10px; /* Расстояние между кнопками */
+}
+
+.auth-button {
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 10px;
+    font-weight: 500;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.sign-up {
+    border: 1px solid #fff;
+    background-color: #9b51e000;
+    color: white;
+}
+
+.sign-up:hover {
+    background-color: #7a3bb5;
+    transform: scale(0.8);
+}
+
+.log-in {
+    background-color: transparent;
+    color: #ffffff;
+}
+
+.log-in:hover {
+    background-color: #9b51e018;
+    color: white;
+    transform: scale(0.8);
+}
+
+.kartinkaSVO {
+    display: block;
+    
+}
+
+section {
+    padding: 20px;
+    display: flex; /* Делаем секцию flex-контейнером */
+    align-items: flex-start; /* Выравниваем элементы по верхнему краю */
+    gap: 20px; /* Расстояние между текстом и картинкой */
+    margin-left: 50px;
+}
+
+.text-content {
+    flex: 1; /* Текст занимает всё доступное пространство */
+    line-height: 90px;
+    margin-bottom: 0px;
+}
+
+.text-content>p {
+    line-height: 40px;
+    font-size: 36px;
+    font-weight: normal;
+    top: 0;
+    left: 50px;
+    margin-top: 0;
+    margin-left: 30px;
+}
+
+.text-content>h2 {
+    margin-bottom: 10px;
+}
+
+.photocard {
+    position: revative;
+    width: 447px;
+    height: 448px;
+}
+
+.photocard>p1 {
+    position: absolute;
+    left: 1532px;
+    top: 705px;
+    z-index: 5;
+    color: #fff;
+}
+
+.photocard>p2 {
+    position: absolute;
+    left: 1610px;
+    top: 729px;
+    z-index: 5;
+    color: #fff;
+}
+
+/*space-betwen*/
+
+.photocard>p3 {
+    position: absolute;
+    left: 1255px;
+    top: 704px;
+    z-index: 5;
+    color: #ddd;
+}
+
+.photocard>p4 {
+    position: absolute;
+    left: 1255px;
+    top: 728px;
+    z-index: 5;
+    color: #fff;
+}
+
+.gradient {
+    width: 447px; /* Ширина картинки (настрой под свои нужды) */
+    height: 448px; /* Высота подстроится автоматически */
+    position: absolute;
+    top: 130px;
+    left: 1200px;
+    margin-right: 100px;
+    margin-top: 100px;
+    z-index: 2;
+}
+
+.gradient1 {
+    width: 400px;
+    height: auto;
+    position: absolute;
+    top: 0;
+    left: 1000px;
+    z-index: 3;
+}
+
+.gradient2 {
+    width: 400px;
+    height: auto;
+    position: absolute;
+    top: 550px;
+    left: 1450px;
+    z-index: 3;
+}
+
+.rectangle {
+    width: 500px;
+    height: auto;
+    position: absolute;
+    top: 200px;
+    left: 1170px;
+    z-index: 1;
+}
+
+.girlava {
+    width: 50px;
+    height: auto;
+    position: absolute;
+    left: 1200px;
+    top: 705px;
+    z-index: 3;
+}
+
+.like {
+    position: absolute;
+    left: 1580px;
+    top: 730px;
+    z-index: 4;
+}
+
+.text-content>h2 {
+    color: #fff;
+    font-size: 82px;
+    margin-left: 30px;
+}
+
+.text-content>p {
+    color: #fff;
+    font-size: 36px;
+    margin-bottom: 0;
+}
+
+.btn-gradi1 {
+    padding: 15px 40px; /* Внутренние отступы */
+    font-size: 18px; /* Размер текста */
+    font-weight: 500; /* Жирность текста */
+    color: white; /* Цвет текста */
+    background-image: linear-gradient(to right, #9B51E0, #3081ED); /* Градиент */
+    border: 2px solid rgba(255, 255, 255, 0); /* Белая обводка */
+    border-radius: 10px; /* Закругление углов */
+    text-decoration: none; /* Убираем подчеркивание */
+    transition: all 0.3s ease; /* Плавный переход для hover-эффекта */
+    margin-right: 20px; /* Отступ справа */
+}
+
+.btn-gradi2 {
+    border: 1px solid #fff;
+    border-radius: 7px;
+    background-color: #9b51e000;
+    color: white;
+    text-decoration: none;
+    padding: 15px 40px;
+}
+
+.btn-gradi {
+    margin-left: 30px;
+}
+
+.auctions {
+    display: flex;
+    color: #fff;
+    align-items: center;
+    justify-content: space-between;
+    margin-left: 90px;
+    margin-right: 260px;
+    text-decoration: none;
+    font-weight: 100;
+    font-size: 48px;
+    gap: 10px;
+}
+
+.right-group {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.strelka{
+    display: flex;
+}
+
+.auc-pic-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    margin-left: 90px;
+    margin-right: 240px;
+    position: relative;
+    margin-bottom: 100px;
+}
+
+.image-block {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.text-block {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    color: #fff;
+    grid-template-rows: auto auto;
+    gap: 10px;
+}
+
+.text-block p:first-child,
+.text-block p:nth-child(2) {
+    grid-row: 1;
+    left: 50px;
+    width: 140px;
+    height: auto;
+}
+
+.text-block p:nth-child(3) {
+    grid-row: 2;
+    left: 0px;
+    top: 0px;
+
+}
+
+.text-block a {
+    left: 210px;
+    grid-row: 2;
+    margin: 0;
+    
+}
+
+.btn-bid {
+    border: 0.5px solid #fff;
+    border-radius: 5px;
+    background-color: #9b51e000;
+    color: white;
+    padding: 10px 5px;
+    text-decoration: none;
+}
+
+.no-wrap {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+article {
+    display: flexbox;
+    text-align: center;
+    align-items: center; /* Центрирование по вертикали */
+    flex-wrap: wrap; /* Если блоки не помещаются в одну строку */
+}
+
+.images-container {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 90px;
+    margin-right: 240px;
+}
+
+.text-article {
+    color: #fff;
+    display: inline-block;
+    margin: auto;
+    font-size: larger;
+    margin-bottom: 50px;
+}
+
+
+
+.pic-article {
+    position: relative;
+    display: inline-block;
+    width: 200px;
+    height: auto;
+}
+
+.pic-article img {
+    position: absolute; /* Абсолютное позиционирование для наложения */
+    top: 0;
+    left: 0;
+    width: 100%; /* Чтобы изображения занимали всю ширину блока */
+    height: auto; /* Сохранение пропорций */
+}
+
+.pic-article img:first-child {
+    position: relative; /* Первое изображение будет базовым */
+    z-index: 1; /* Убедимся, что оно выше фонового */
+}
+
+.pic-article img:last-child {
+    z-index: 0; /* Фоновое изображение будет ниже */
+    width: 50%;
+    justify-content: center;
+}
+
+.icons {
+    display: block;
+    position: absolute;
+    left: 50px;
+    width: 200px;
+    margin-left: 50px;
+    margin-top: 40px;
+}
+
+.gradiback {
+    position: absolute;
+    width: 1292px;
+    height: 53px;
+    left: 300px;
+    top: 1550px;
+}
+
+.article-txt-container {
+    display: inline-block;
+    color: #fff;
+}
+
+.podpis {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.podpis p {
+    display: flex;
+}
+
+.podpis :nth-child(1) {
+    position: absolute;
+    left: 0px;
+}
+
+.second {
+    position: absolute;
+    top: 1875px;
+    margin-left: 110px;
+}
+
+.third {
+    position: absolute;
+    top: 1875px;
+    margin-left: 1010px;
+}
+
+.fourth {
+    position: absolute;
+    top: 1875px;
+    margin-left: 1480px;
+}
+
+.five {
+    position: absolute;
+    top: 1875px;
+    margin-left: 560px;
+}
+
+span {
+    display: flex;
+    margin-top: 200px;
+    color: #fff;
+}
+
+.discover-container {
+    color: #fff;
+}
+
+.discover {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 100px;
+    margin-bottom: 30px;
+}
+
+.disc-nav-options {
+    display: flex;
+    gap: 20px; /* отступ между элементами */
+    
+}
+
+.nav-option {
+    display: flex;
+    align-items: center;
+    gap: 8px; /* отступ между иконкой и текстом */
+    cursor: pointer;
+    justify-content: flex-end;
+}
+
+.nav-option p {
+    color: #fff;
+}
+
+.nav-option img {
+    width: 25px;
+    height: auto;
+}
+
+.discover-content {
+    display: flex;
+    justify-content: space-between;
+    margin-right: 100px;
+    margin-left: 90px;
+    margin-bottom: 30px;
+}
+
+.discoverSVO-text {
+    display: grid;
+    grid-template-columns: 150px 140px;
+    color: #fff;
+    grid-template-rows: auto auto;
+    gap: 10px;
+    align-items: center; /* Выравнивание по вертикали */
+     /* Добавьте это для выравнивания по горизонтали */
+}
+
+.discoverSVO-text p:first-child,
+.discoverSVO-text p:nth-child(2) {
+    grid-row: 1;
+    width: 140px;
+    height: auto;
+    margin: 0; /* Убираем возможные отступы */
+    text-align: center; /* Выравнивание текста по центру */
+}
+
+.discoverSVO-text p:nth-child(3) {
+    grid-row: 2;
+    width: 140px;
+    height: auto;
+    margin: 0; /* Убираем возможные отступы */
+    text-align: center; /* Выравнивание текста по центру */
+}
+
+.discoverSVO-text a {
+    grid-row: 2;
+    margin: 0 auto; /* Центрирование кнопки */
+    width: 50px;
+     /* Выравнивание текста кнопки по центру */
+    display: flex; /* Для лучшего центрирования */
+    align-items: center; /* Для лучшего центрирования */
+    margin-bottom: px;
+}
+
+.discover-btn {
+    text-decoration: none;
+    color: #fff;
+    border: 0.5px solid #fff;
+    border-radius: 7px;
+    padding: 5px 10px; /* Добавьте отступы для лучшего вида кнопки */
+}
+
+.lines {
+    position: absolute;
+    top: 2480px;
+    left: 85px;
+}
+
+.loadmore-btn {
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+    border: 1px solid #fff;
+    border-radius: 7px;
+    padding: 5px 10px;
+    color: #fff;
+    margin-top: 50px;
+}
